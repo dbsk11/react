@@ -14,7 +14,7 @@ const MainContainer = (props) => {
   let arrayToRender = props.imageObjects.map((imageObj) => {
     return (
       <ImageCard
-        imageObj={imageObj.data}
+        imageObj={imageObj}
       />
     )
   })

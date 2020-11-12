@@ -4,7 +4,7 @@ const ImageCard = (props) => {
 
   // Destructuring
   console.log('card', props)
-  const {thumbnails, title} = props.imageObj
+  const {thumbnails, title} = props.imageObj.data
 
   return(
     <div>
