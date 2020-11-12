@@ -11,9 +11,13 @@ const MainContainer = (props) => {
     })
   }, [])
 
-  const renderImages = (imageObj) => {
-    let arrayToRender = 
-  }
+  let arrayToRender = props.imageObjects.map((imageObj) => {
+    return (
+      <ImageCard
+        imageObj={imageObj.data}
+      />
+    )
+  })
 
 
   return (
