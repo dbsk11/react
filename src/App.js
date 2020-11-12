@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MainContainer from './components/MainContainer';
 
 const App = () => {
-
-  const website = "https://www.reddit.com/r/MostBeautiful/.json"
+  const [imageObjects, setImageObjects] = useState([]);
 
   return (
     <div className="App">
-      <MainContainer />
+      <MainContainer 
+        setImageObjects={setImageObjects}
+        imageObjects={imageObjects}
+      />
     </div>
   );
 }
