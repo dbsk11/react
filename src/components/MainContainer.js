@@ -15,6 +15,8 @@ const MainContainer = (props) => {
     return (
       <ImageCard
         imageObj={imageObj}
+        favorites={props.favorites}
+        setFavorites={props.setFavorites}
       />
     )
   })
