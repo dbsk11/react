@@ -11,13 +11,27 @@ const MainContainer = (props) => {
     })
   }, [])
 
+
+
   let arrayToRender = props.imageObjects.map((imageObj) => {
     return (
-      <ImageCard
-        imageObj={imageObj}
-        favorites={props.favorites}
-        setFavorites={props.setFavorites}
-      />
+      <div>
+        <div className="dropdown">
+          <select value={props.listToRender} onChange={(e) => props.setListToRender()}>
+            <option value="All Images">
+              All Images 
+            </option>
+            <option value="Favorites">
+              Favorites
+            </option>
+          </select>
+        </div>
+        <ImageCard
+          imageObj={imageObj}
+          favorites={props.favorites}
+          setFavorites={props.setFavorites}
+        />
+      </div>
     )
   })
 
