@@ -7,7 +7,7 @@ const ImageCard = (props) => {
 
   // Handle Click
   const handleClick = (evt) => {
-    
+    props.handleAddToFavorites(props.imageObj.data)
   }
 
   return(

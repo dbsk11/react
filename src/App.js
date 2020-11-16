@@ -5,6 +5,11 @@ const App = () => {
   const [imageObjects, setImageObjects] = useState([]);
   const [favorites, setFavorites] = useState([]);
   const [listToRender, setListToRender] = useState([]);
+
+  const handleAddToFavorites = (newImgObj) => {
+    const copyOfFavoritesList = [...favorites, newImgObj]
+
+  }
  
   return (
     <div className="App">
@@ -15,6 +20,7 @@ const App = () => {
         setFavorites={setFavorites}
         listToRender={listToRender}
         setListToRender={setListToRender}
+        handleAddToFavorites={handleAddToFavorites}
       />
     </div>
   );

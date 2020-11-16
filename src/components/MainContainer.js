@@ -28,8 +28,10 @@ const MainContainer = (props) => {
         </div>
         <ImageCard
           imageObj={imageObj}
+          // key={}
           favorites={props.favorites}
           setFavorites={props.setFavorites}
+          handleAddToFavorites={props.handleAddToFavorites}
         />
       </div>
     )
